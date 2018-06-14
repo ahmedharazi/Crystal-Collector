@@ -49,7 +49,7 @@
                                     <h3 class="panel-title text text-center">Target Score</h3>
                             </div>
                              <div class="panel-body">
-                                 <h3 class="text-center"><strong>78</strong></h3>
+                                 <h3 class="text-center" id="targetScore"><strong>78</strong></h3>
                              </div>
                     </div>
             </div>
@@ -62,7 +62,7 @@
                                 <h3 class="panel-title  text-center">Your Score</h3>
                         </div>
                          <div class="panel-body">
-                             <h3 class="text-center"><strong>24</strong></h3>
+                             <h3 class="text-center" id="yourScore"><strong>24</strong></h3>
                          </div>
                 </div>
              </div>
@@ -74,10 +74,10 @@
                                 <h3 class="panel-title  text-center">Crystal Selection</h3>
                         </div>
                          <div class="panel-body text-center">
-                             <img src="assets/images/crystal1.png"  height="60px" alt="Crystal">
-                             <img src="assets/images/crystal2.png"  height="60px" alt="Crysta2">
-                             <img src="assets/images/crystal3.png"  height="60px" alt="Crysta3">
-                             <img src="assets/images/crystal4.png"  height="60px" alt="Crysta4">
+                             <img src="assets/images/crystal1.png"  height="60px" alt="" id="Crystal1">
+                             <img src="assets/images/crystal2.png"  height="60px" alt="" id="Crystal2">
+                             <img src="assets/images/crystal3.png"  height="60px" alt="" id="Crystal3">
+                             <img src="assets/images/crystal4.png"  height="60px" alt="" id="Crystal4">
 
 
                          </div>
@@ -93,7 +93,7 @@
                             <h3 class="panel-title text text-center">Win Count</h3>
                     </div>
                      <div class="panel-body">
-                         <h3 class="text-center"><strong>0</strong></h3>
+                         <h3 class="text-center" id="winCount">0</h3>
                      </div>
                     </div>
 
@@ -104,7 +104,7 @@
                             <h3 class="panel-title text text-center">loss  Count</h3>
                     </div>
                      <div class="panel-body">
-                         <h3 class="text-center"><strong>0</strong></h3>
+                         <h3 class="text-center" id="lossCount">0</h3>
                     </div>
                 </div>
 
@@ -113,6 +113,9 @@
                         
              
     </div>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!--Main Game logic -->
     <script src="logic.js"></script>
 </body>
 </html>
