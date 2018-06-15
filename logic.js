@@ -1,8 +1,10 @@
-// Global Varablies 
+
+
+
+//Global Varablies 
 //--------------------------------------
 
-// Crystal Varables
-
+//Crystal Varables
 var Crystal = {
     Crystal1:
     {
@@ -42,41 +44,31 @@ var lossCount = 0;
 //-------------------------------------- 
 
 var getRandom = function(min, max){
-    return math.floor(math.random() * (max - min +1)) + min;
+    return Math.floor(Math.random() * (max - min +1)) + min;
 }
-// Start the game and restart the game  
-var startGame = function () {
+// // Start the game and restart the game  
+var startGame = function() {
+
+    currentScore = 0;
+
+    targetScore = getRandom(19,120);
+
+    Crystal.Crystal1.value = getRandom(1, 12);
+    Crystal.Crystal2.value = getRandom(1, 12);
+    Crystal.Crystal3.value = getRandom(1, 12);
+    Crystal.Crystal4.value = getRandom(1, 12);
 
 
-// Reset the Current Score
-var currentScore =0;
-//ser a new Target Score (between 19 and 120 )
+    $("#yourScore").html(currentScore);
+    $("#targetScore").html(targetScore);  
 
-targetScore= getRandom(19, 120);
-// set different value for each of the Crysatal ( betweeen 1 -12 )
-Crystal.Crystal1.value = getRandom(1, 12);
-Crystal.Crystal2.value = getRandom(1, 12);
-Crystal.Crystal3.value = getRandom(1, 12);
-Crystal.Crystal4.value = getRandom(1, 12);
-
-
-// Change the HTML to reflect  all of these changes 
-$("#yourScore").html(currentScore);
-$("#targetScore").html(targetScore);
-
-
-
-
-
-
-console.log("--------------------------")
-console.log("Target Score:" + targetScore);
-console.log("Crystal1: " + Crystal.Crystal1.value + "| Crystal2: " + Crystal.Crystal2.value + " | Crystal3: " + Crystal.Crystal3.value + "| Crystal4: " + Crystal.Crystal4.value);
-console.log("--------------------------")
-
-
+    console.log("--------------------------")
+    console.log("Target Score:" + targetScore);
+    console.log("Crystal1: " + Crystal.Crystal1.value + "| Crystal2: " + Crystal.Crystal2.value + " | Crystal3: " + Crystal.Crystal3.value + "| Crystal4: " + Crystal.Crystal4.value);
+    console.log("--------------------------")
 
 }
+
 
 var addValues = function(Crystal) {
     // change the cuurntScore 
@@ -123,22 +115,24 @@ var checkWin = function() {
 
 
 
-// Mian Process
-//---------------------------------
+// // Mian Process
+// //---------------------------------
+// startGame();
 startGame();
-
 $("#Crystal1").click(function() {
+    // alert("اليعبري");
    addValues(Crystal.Crystal1); 
 });
 $("#Crystal2").click(function() {
-    addValues(Crystal.Crystal2);
-
+   addValues(Crystal.Crystal2);
+//    alert(" هشام");
 });
 $("#Crystal3").click(function() {
-    addValues(Crystal.Crystal3);
-
-
+   addValues(Crystal.Crystal3);
+//    alert("احمد");
 });
 $("#Crystal4").click(function() {
-    addValues(Crystal.Crystal4);
+   addValues(Crystal.Crystal4);
+//   alert("الحزم");
 });
+

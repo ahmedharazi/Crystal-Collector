@@ -12,7 +12,7 @@
 
 
             <!--Crystal collector jumbotron-->
-         <div class="jumbotron" style="background-color: purple; color :white;">
+         <div class="jumbotron" style="background-color: rgb(70, 59, 223); color :white;">
                     <div class="container">
                         <h1 class="text-center"><strong>Crystal Collector</strong> </h1> 
                    </div>                
@@ -29,13 +29,13 @@
                             <h3 class="panel-title   text-center">Instructions</h3>
                     </div>
                      <div class="panel-body">
-                         <p><small> ipsum dolor sit amet consectetur adipisicing elit. Asperiores minus perferendis dolorum quis repellat, saepe maxime ex ullam ratione quam reiciendis illo. Consequuntur sint voluptatum dolores omnis molestiae, officiis maxime!</small></p>
-                     </div>
-                    
-
-
+                         <p><small> You will be given a random number at the start of the game. 
+                            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+                            You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. 
+                            The value of each crystal is hidden until clicked. Each new game, the crystals will have a new value.
+                            Good Luck!</small></p>
+                     </div>                    
                 </div>
-
             </div>
         </div>
 
@@ -49,7 +49,7 @@
                                     <h3 class="panel-title text text-center">Target Score</h3>
                             </div>
                              <div class="panel-body">
-                                 <h3 class="text-center" id="targetScore"><strong>78</strong></h3>
+                                 <h3 class="text-center" id="targetScore"></h3>
                              </div>
                     </div>
             </div>
@@ -62,7 +62,7 @@
                                 <h3 class="panel-title  text-center">Your Score</h3>
                         </div>
                          <div class="panel-body">
-                             <h3 class="text-center" id="yourScore"><strong>24</strong></h3>
+                             <h3 class="text-center" id="yourScore"></h3>
                          </div>
                 </div>
              </div>
@@ -113,8 +113,16 @@
                         
              
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <br>
+            <br>
+          <p>Copyright &copy;<strong>Ahmed Alharazi 2018</strong> </p>
+        </div>
+      </footer>
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <!--Main Game logic -->
     <script src="logic.js"></script>
 </body>
