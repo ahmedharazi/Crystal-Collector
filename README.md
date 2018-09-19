@@ -15,5 +15,9 @@ Each time when the game start, the game will change the values of each crystal
 Game
 This app update dynamically the HTML pages with the jQuery library. 
 
+
+![app Image](/assets/images/pic1.png)
+![app Image](/assets/images/pic2.png)
+
 To Play this Game press this link :
 https://ahmedharazi.github.io/Crystal-Collector/
