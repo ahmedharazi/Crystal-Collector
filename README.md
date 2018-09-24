@@ -1,4 +1,4 @@
-# :Crystal:Crystal-Collector
+# Crystal-Collector
 
 In this Game 
 
